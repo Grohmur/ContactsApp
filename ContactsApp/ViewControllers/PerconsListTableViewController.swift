@@ -11,11 +11,6 @@ class PerconsListTableViewController: UITableViewController {
 
     var persons = DataManager.getPercons()
 //не смог перенести с ТабБара данные :(
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     // MARK: - Table view data source
 

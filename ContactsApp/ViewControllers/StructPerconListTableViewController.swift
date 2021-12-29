@@ -33,13 +33,25 @@ class StructPerconListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         switch indexPath.row {
-        case 0: content.text = persons[indexPath.section].name + " " + persons[indexPath.section].surname
-        case 1: content.text = persons[indexPath.section].phone
-        default: content.text = persons[indexPath.section].email
+        case 0:
+            content.text = persons[indexPath.section].name + " " + persons[indexPath.section].surname
+        case 1:
+            content.text = persons[indexPath.section].phone
+            content.image = UIImage(systemName: "phone")
+        default:
+            content.text = persons[indexPath.section].email
+            content.image = UIImage(systemName: "mail")
         }
-
         cell.contentConfiguration = content
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        if indexPath.row == 0 {
+            cell.backgroundColor = .lightGray
+        }
+        //Обратил внимание на то, что при резком проматывании списка, цвета строк съезжают и некоторые излишне закрашиваются в серый...
+    }
 }
-//
