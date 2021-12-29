@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		311D53EF277B93F000F7D9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D53EE277B93F000F7D9A8 /* AppDelegate.swift */; };
 		311D53F1277B93F000F7D9A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D53F0277B93F000F7D9A8 /* SceneDelegate.swift */; };
-		311D53F3277B93F000F7D9A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D53F2277B93F000F7D9A8 /* ViewController.swift */; };
 		311D53F6277B93F000F7D9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311D53F4277B93F000F7D9A8 /* Main.storyboard */; };
 		311D53F8277B93F100F7D9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311D53F7277B93F100F7D9A8 /* Assets.xcassets */; };
 		311D53FB277B93F100F7D9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311D53F9277B93F100F7D9A8 /* LaunchScreen.storyboard */; };
+		311D5406277B99AA00F7D9A8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D5405277B99AA00F7D9A8 /* DataManager.swift */; };
+		3144F195277C56E300E747E4 /* Percons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144F194277C56E300E747E4 /* Percons.swift */; };
+		3144F197277C657400E747E4 /* PerconsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144F196277C657400E747E4 /* PerconsListTableViewController.swift */; };
+		31933EDD277C79D000466B55 /* PerconInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31933EDC277C79D000466B55 /* PerconInfoViewController.swift */; };
+		31933EDF277C801800466B55 /* StructPerconListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31933EDE277C801800466B55 /* StructPerconListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		311D53EB277B93F000F7D9A8 /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311D53EE277B93F000F7D9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		311D53F0277B93F000F7D9A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		311D53F2277B93F000F7D9A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		311D53F5277B93F000F7D9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		311D53F7277B93F100F7D9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		311D53FA277B93F100F7D9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		311D53FC277B93F100F7D9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311D5405277B99AA00F7D9A8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3144F194277C56E300E747E4 /* Percons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Percons.swift; sourceTree = "<group>"; };
+		3144F196277C657400E747E4 /* PerconsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerconsListTableViewController.swift; sourceTree = "<group>"; };
+		31933EDC277C79D000466B55 /* PerconInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerconInfoViewController.swift; sourceTree = "<group>"; };
+		31933EDE277C801800466B55 /* StructPerconListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructPerconListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		311D53ED277B93F000F7D9A8 /* ContactsApp */ = {
 			isa = PBXGroup;
 			children = (
-				311D53EE277B93F000F7D9A8 /* AppDelegate.swift */,
-				311D53F0277B93F000F7D9A8 /* SceneDelegate.swift */,
-				311D53F2277B93F000F7D9A8 /* ViewController.swift */,
-				311D53F4277B93F000F7D9A8 /* Main.storyboard */,
-				311D53F7277B93F100F7D9A8 /* Assets.xcassets */,
-				311D53F9277B93F100F7D9A8 /* LaunchScreen.storyboard */,
-				311D53FC277B93F100F7D9A8 /* Info.plist */,
+				311D5408277B99D100F7D9A8 /* Model */,
+				311D5404277B944800F7D9A8 /* ViewControllers */,
+				311D5403277B942900F7D9A8 /* Storyboards */,
+				311D5402277B940A00F7D9A8 /* OtherFiles */,
 			);
 			path = ContactsApp;
+			sourceTree = "<group>";
+		};
+		311D5402277B940A00F7D9A8 /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				311D53F7277B93F100F7D9A8 /* Assets.xcassets */,
+				311D53FC277B93F100F7D9A8 /* Info.plist */,
+				311D53F0277B93F000F7D9A8 /* SceneDelegate.swift */,
+				311D53EE277B93F000F7D9A8 /* AppDelegate.swift */,
+				311D5405277B99AA00F7D9A8 /* DataManager.swift */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		311D5403277B942900F7D9A8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				311D53F4277B93F000F7D9A8 /* Main.storyboard */,
+				311D53F9277B93F100F7D9A8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		311D5404277B944800F7D9A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3144F196277C657400E747E4 /* PerconsListTableViewController.swift */,
+				31933EDC277C79D000466B55 /* PerconInfoViewController.swift */,
+				31933EDE277C801800466B55 /* StructPerconListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		311D5408277B99D100F7D9A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3144F194277C56E300E747E4 /* Percons.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				311D53F3277B93F000F7D9A8 /* ViewController.swift in Sources */,
 				311D53EF277B93F000F7D9A8 /* AppDelegate.swift in Sources */,
+				311D5406277B99AA00F7D9A8 /* DataManager.swift in Sources */,
+				3144F195277C56E300E747E4 /* Percons.swift in Sources */,
+				31933EDD277C79D000466B55 /* PerconInfoViewController.swift in Sources */,
+				3144F197277C657400E747E4 /* PerconsListTableViewController.swift in Sources */,
 				311D53F1277B93F000F7D9A8 /* SceneDelegate.swift in Sources */,
+				31933EDF277C801800466B55 /* StructPerconListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CZL7W2P9F8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactsApp/Info.plist;
+				INFOPLIST_FILE = ContactsApp/OtherFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CZL7W2P9F8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactsApp/Info.plist;
+				INFOPLIST_FILE = ContactsApp/OtherFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
